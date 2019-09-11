@@ -8,11 +8,7 @@ export default class App extends React.Component {
             title: "Items Datatable",
         };
     }
-
-    changeTitle(title) {
-        this.setState({title});
-    }
-
+    
     render() {
         return (
             <Layout title={this.state.title}/>
