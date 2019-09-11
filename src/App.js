@@ -16,12 +16,6 @@ export default class App extends React.Component {
     render() {
         return (
             <Layout title={this.state.title}/>
-
-            // <div>
-            //     <Header changeTitle={this.changeTitle.bind(this)} title={this.state.title} />
-            //     <Body />
-            //     <Footer />
-            // </div>
         );
     }
 }
