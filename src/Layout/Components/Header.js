@@ -9,7 +9,7 @@ export default class Header extends React.Component {
     render() {
         return (
             <Paper className="header">
-                <Typography className="text-center" variant="h4" component="h4">
+                <Typography className="text-center" variant="h5" component="h5">
                     {this.props.title}
                 </Typography>
             </Paper>

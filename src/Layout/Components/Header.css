@@ -1,8 +1,12 @@
 .header {
-    padding: 2.5rem;
-    color: #24FF24;
+    padding: 1.5rem;
 }
 
 .header .text-center {
     text-align: center;
+}
+.header h5 {
+    font-family: "Bookman Old Style";
+    font-weight: 600;
+    color: #474747;
 }
