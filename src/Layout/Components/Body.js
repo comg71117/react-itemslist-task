@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Body.css";
 import {forwardRef} from 'react';
+import data from "../../shared/providers/data";
 
 import MaterialTable from 'material-table';
 
@@ -42,12 +43,49 @@ const tableIcons = {
 
 
 export default class Body extends React.Component {
+    constructor() {
+        super();
+        this.getItemsList();
+    }
+
+    getItemsList() {
+        this.data = [...data];
+    }
 
     render() {
         return (
-            <MaterialTable
-                icons={tableIcons}
-            />
+            <div>
+                <MaterialTable
+                    title='Items'
+                    options={{
+                        search: false,
+                        filtering: true,
+                        pageSize: 10,
+                        paging: false,
+                        pagination: false
+                    }}
+                    icons={tableIcons}
+                    columns={[
+                        {
+                            title: 'Title',
+                            field: 'title',
+                            filtering: false,
+                            sorting: false
+                        },
+                        {
+                            title: 'Status',
+                            field: 'status',
+                            filtering: true
+                        },
+                        {
+                            title: 'Stars',
+                            field: 'stars',
+                            filtering: false
+                        },
+                    ]}
+                    data={data}
+                />
+            </div>
         );
     }
 }

@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Header from "./Components/Header";
 import Body from "./Components/Body";
+import Footer from "./Components/Footer";
 
 
 export default class App extends React.Component {
@@ -19,6 +20,9 @@ export default class App extends React.Component {
                         </Grid>
                         <Grid item xs={12}>
                             <Body/>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Footer/>
                         </Grid>
                     </Grid>
                 </Paper>

@@ -1,0 +1,16 @@
+.footer {
+    padding: 1.5rem;
+}
+
+.footer .text-center {
+    text-align: center;
+}
+
+.footer .text-start {
+    text-align: start;
+}
+.footer .instructions {
+    font-family: "Bookman Old Style";
+    font-size: 0.925rem;
+    color: #474747;
+}
