@@ -2,7 +2,7 @@ Instructions:
 1. in the install folder, given latest node and npm installed  
     ```` 
         npm install
-        npm run dev
+        npm start
     ````
 2. in a browser visit 
      ```

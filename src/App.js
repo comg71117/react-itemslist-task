@@ -5,7 +5,7 @@ export default class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            title: "Welcome",
+            title: "the items datatable",
         };
     }
 
